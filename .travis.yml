@@ -48,6 +48,8 @@ install:
 # - composer require symfony/swiftmailer-bundle # in symfony/website-skeleton
 - composer require easycorp/easyadmin-bundle
 - composer show --latest
+- install --directory config/packages
+- cp ../config/packages/*.yaml config/packages
 - composer require friendsofsymfony/user-bundle
 
 script:
