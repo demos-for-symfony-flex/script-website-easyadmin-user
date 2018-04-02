@@ -37,7 +37,7 @@ before_install:
   fi
 
 install:
-- composer create-projet symfony/website-skeleton
+- composer create-project symfony/website-skeleton
 - ls
 - cd website-skeleton
 # - composer require symfony/yaml # in symfony/website-skeleton
