@@ -86,7 +86,7 @@ after_script:
 - composer console -- debug:router
 - composer console -- server:start &
 - printf 'HEAD /admin/dashboard HTTP/1.1\r\n\r\n' | socat - TCP4:localhost:8000,forever >/dev/null # Waiting for server to connect.
-- elinks http://localhost:8000/admin -dump-color-mode 4 -dump
+- elinks http://localhost:8000/login -dump-color-mode 4 -dump
 # - elinks http://localhost:8000/index.php/admin -dump-color-mode 4 -dump
 
 
